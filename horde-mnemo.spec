@@ -1,7 +1,7 @@
 %define module	mnemo
 %define name	horde-%{module}
 %define version	2.2
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -56,6 +56,8 @@ install -d -m 755 %{buildroot}%{_datadir}/horde/%{module}
 install -d -m 755 %{buildroot}%{_sysconfdir}/horde
 cp -pR *.php %{buildroot}%{_var}/www/horde/%{module}
 cp -pR themes %{buildroot}%{_var}/www/horde/%{module}
+cp -pR js %{buildroot}%{_var}/www/horde/%{module}
+cp -pR notepads %{buildroot}%{_var}/www/horde/%{module}
 cp -pR lib %{buildroot}%{_datadir}/horde/%{module}
 cp -pR locale %{buildroot}%{_datadir}/horde/%{module}
 cp -pR scripts %{buildroot}%{_datadir}/horde/%{module}
