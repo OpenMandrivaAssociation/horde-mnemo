@@ -1,7 +1,7 @@
 %define module	mnemo
 %define name	horde-%{module}
 %define version	2.2
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -11,8 +11,9 @@ Release:        %{release}
 Summary:	The Horde notes and memo application
 License:	GPL
 Group: 		System/Servers
-Source0:	ftp://ftp.horde.org/pub/%{module}/%{module}-h3-%{version}.tar.gz
 URL:		http://www.horde.org/%{module}
+Source0:	ftp://ftp.horde.org/pub/%{module}/%{module}-h3-%{version}.tar.gz
+Patch:      %{module}-h3-2.2-fix-constant-loading.patch
 Requires(post):	rpm-helper
 Requires:	horde >= 3.0
 BuildArch:	noarch
@@ -23,6 +24,7 @@ Mnemo is the Horde note manager application.
 
 %prep
 %setup -q -n %{module}-h3-%{version}
+%patch -p 1
 
 %build
 
