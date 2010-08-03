@@ -1,7 +1,7 @@
 %define module	mnemo
 %define name	horde-%{module}
 %define version	2.2.2
-%define release	%mkrel 3
+%define release	%mkrel 4
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -17,7 +17,6 @@ Patch:      %{module}-h3-2.2-fix-constant-loading.patch
 Requires(post):	rpm-helper
 Requires:	horde >= 3.3.5
 BuildArch:	noarch
-BuildRoot: 	%{_tmppath}/%{name}-%{version}
 
 %description
 Mnemo is the Horde note manager application.
