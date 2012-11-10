@@ -1,0 +1,12 @@
+diff -Naur --exclude '*~' mnemo-h3-2.2/config/prefs.php.dist mnemo-h3-2.2-fix-constant-loading/config/prefs.php.dist
+--- mnemo-h3-2.2/config/prefs.php.dist	2008-01-03 23:24:25.000000000 +0100
++++ mnemo-h3-2.2-fix-constant-loading/config/prefs.php.dist	2008-11-18 23:05:36.000000000 +0100
+@@ -6,7 +6,7 @@
+  */
+ 
+ // Make sure that constants are defined.
+-require_once dirname(__FILE__) . '/../lib/Mnemo.php';
++require_once '/usr/share/horde/mnemo/lib/Mnemo.php';
+ 
+ $prefGroups['display'] = array(
+     'column' => _("General Options"),
