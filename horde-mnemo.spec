@@ -1,7 +1,7 @@
 %define module	mnemo
 %define name	horde-%{module}
 %define version	2.2.2
-%define release	%mkrel 4
+%define release:	5
 
 %define _requires_exceptions pear(Horde.*)
 
@@ -117,10 +117,6 @@ fi
 %_post_webapp
 %endif
 
-%postun
-%if %mdkversion < 201010
-%_postun_webapp
-%endif
 
 %files
 %defattr(-,root,root)
