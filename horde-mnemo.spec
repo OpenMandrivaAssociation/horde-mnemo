@@ -1,13 +1,8 @@
 %define module	mnemo
-%define name	horde-%{module}
-%define version	2.2.2
-%define release:	6
 
-%define _requires_exceptions pear(Horde.*)
-
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
+Name:           horde-%{module}
+Version:        2.2.2
+Release:        6
 Summary:	The Horde notes and memo application
 License:	GPL
 Group: 		System/Servers
