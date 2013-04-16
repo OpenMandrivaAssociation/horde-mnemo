@@ -1,7 +1,7 @@
 %define module	mnemo
 %define name	horde-%{module}
 %define version	2.2.2
-%define release:	5
+%define release:	6
 
 %define _requires_exceptions pear(Horde.*)
 
