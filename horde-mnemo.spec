@@ -3,7 +3,7 @@
 
 Name:           horde-%{module}
 Version:        2.2.2
-Release:        7
+Release:        8
 Summary:	The Horde notes and memo application
 
 License:	GPL
