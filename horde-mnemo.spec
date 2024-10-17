@@ -8,7 +8,7 @@ Summary:	The Horde notes and memo application
 
 License:	GPL
 Group: 		System/Servers
-URL:		http://www.horde.org/%{module}
+URL:		https://www.horde.org/%{module}
 Source0:	ftp://ftp.horde.org/pub/%{module}/%{module}-h3-%{version}.tar.gz
 Patch:      %{module}-h3-2.2-fix-constant-loading.patch
 Requires(post):	rpm-helper
